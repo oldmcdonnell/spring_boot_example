@@ -14,13 +14,13 @@ repositories {
 }
 
 dependencies {
-    // Spring Boot Starter Web
+    // Spring Boot Web Starter
     implementation 'org.springframework.boot:spring-boot-starter-web'
 
-    // Spring Boot Starter Test (includes JUnit, AssertJ, MockMvc, etc.)
+    // Spring Boot Test Starter (for JUnit, MockMvc, and Hamcrest)
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-    // Hamcrest (for matchers like equalTo)
+    // Additional Hamcrest dependency for matchers (optional)
     testImplementation 'org.hamcrest:hamcrest:2.2'
 }
 
