@@ -10,5 +10,10 @@ public class HelloController {
 	public String index() {
 		return "Greetings from Spring Boot! verifiy test";
 	}
+	    // Add this method to map to the "/hello" endpoint
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello, World!";
+    }
 
 }
