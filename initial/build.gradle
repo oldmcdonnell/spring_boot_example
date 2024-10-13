@@ -1,6 +1,6 @@
 plugins {
-	id 'org.springframework.boot' version '3.3.0'
-	id 'java'
+    id 'org.springframework.boot' version '3.3.0'
+    id 'java'
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -10,14 +10,20 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    // Spring Boot Starter Web
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // Spring Boot Starter Test (includes JUnit, AssertJ, MockMvc, etc.)
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // Hamcrest matchers (optional, if you want better assertion syntax)
+    testImplementation 'org.hamcrest:hamcrest:2.2'
 }
 
 test {
-	useJUnitPlatform()
+    useJUnitPlatform()
 }
