@@ -20,7 +20,7 @@ dependencies {
     // Spring Boot Starter Test (includes JUnit, AssertJ, MockMvc, etc.)
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-    // Hamcrest matchers (optional, if you want better assertion syntax)
+    // Hamcrest (for matchers like equalTo)
     testImplementation 'org.hamcrest:hamcrest:2.2'
 }
 
