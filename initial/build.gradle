@@ -30,11 +30,17 @@ dependencies {
     // Spring Boot Web Starter
     implementation 'org.springframework.boot:spring-boot-starter-web'
 
+    // Spring Boot Actuator
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
     // Spring Boot Test Starter (for JUnit, MockMvc, and Hamcrest)
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     // Additional Hamcrest dependency for matchers (optional)
     testImplementation 'org.hamcrest:hamcrest:2.2'
+
+	//monitor metrocs
+	implementation 'io.micrometer:micrometer-core'
 }
 
 test {
