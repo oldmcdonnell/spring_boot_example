@@ -27,20 +27,29 @@ sourceSets {
 }
 
 dependencies {
-    // Spring Boot Web Starter
+    // Spring Boot Web Starter (this is missing in your current setup)
     implementation 'org.springframework.boot:spring-boot-starter-web'
 
-    // Spring Boot Actuator
-    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    // SQLite JDBC
+    implementation 'org.xerial:sqlite-jdbc:3.36.0.3'
 
-    // Spring Boot Test Starter (for JUnit, MockMvc, and Hamcrest)
+    // JPA dependencies
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // Hibernate Validator for validation support
+    implementation 'org.hibernate.validator:hibernate-validator:8.0.0.Final'
+
+    // Validation API
+    implementation 'jakarta.validation:jakarta.validation-api:3.0.0'
+
+    // Micrometer for monitoring
+    implementation 'io.micrometer:micrometer-core'
+    
+    // Spring Boot Test Starter (for testing)
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-    // Additional Hamcrest dependency for matchers (optional)
-    testImplementation 'org.hamcrest:hamcrest:2.2'
-
-	//monitor metrocs
-	implementation 'io.micrometer:micrometer-core'
+    // H2 Database for tests
+    testImplementation 'com.h2database:h2:2.1.210'
 }
 
 test {
